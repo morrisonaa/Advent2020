@@ -16,7 +16,7 @@ with open('input.txt') as fhand:
 
 entries = [int(i) for i in line]
 
-print(entries) 
+print(entries)
 print()
 print ("# of values:", len(entries))
 
@@ -31,7 +31,7 @@ for a, b in itertools.combinations(entries, 2):
     print ((a, b), a+b)
     if a+b == 2020:
         print ("Found it:", a*b)
-        answer = a*b  
+        answer = a*b
 
 
 # In[9]:
@@ -39,4 +39,3 @@ for a, b in itertools.combinations(entries, 2):
 
 print ("# of combos:", count)
 print ("Answer:", answer)
-
